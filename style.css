@@ -1,0 +1,147 @@
+*{
+    font-family: 'Vazir', sans-serif;
+  }
+  /* Make the chart container fill the page using CSS. */
+        #chart {
+          background: #333;
+          position: fixed;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+          bottom: 0px;
+          font-family: 'Vazir', sans-serif;
+        }
+  
+  .svg-container {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%; /* aspect ratio */
+      vertical-align: top;
+      overflow: hidden;
+  }
+  .svg-content-responsive {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 0;
+  }
+  
+  .switch-field {
+      overflow: hidden;
+  }
+  
+  .switch-field input {
+      position: absolute !important;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      width: 1px;
+      border: 0;
+      overflow: hidden;
+  }
+  
+  .switch-field label {
+    float: left;
+  }
+  
+  .switch-field label {
+    display: inline-block;
+    width: 49.7%;
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Vazir', sans-serif;
+    text-align: center;
+    text-shadow: none;
+    background-color: #E4E4E4;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition:    all 0.1s ease-in-out;
+    -ms-transition:     all 0.1s ease-in-out;
+    -o-transition:      all 0.1s ease-in-out;
+    transition:         all 0.1s ease-in-out;
+    /* Texto não selecionável */
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+  }
+  
+  .switch-field label:hover {
+      cursor: pointer;
+  }
+  
+  .switch-field input:checked + label {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 0px;
+    font-weight: 600;
+  }
+  
+  .switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 7px;
+    top: 2px;
+  }
+  
+  /******* Seletor de região *******/
+  .regsel {
+    /* Texto não selecionável */
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+  }
+  
+  .regsel label{
+    padding-right: 10px;
+  }
+  
+  .regsel div {
+    display: inline-block;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .regsel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .regsel tspan {
+    font-size: 0.85em;
+    font-family: 'Vazir', sans-serif;
+  /*   padding-left: 10px;
+    padding-right: 10px; */
+  }
+  
+  .regsel div:hover {
+    background-color: #EAEBED;
+  }
+  
+  .regsel label input:checked ~ div {
+    background-color: #D0D0D0;
+  }
+  
+  text tspan{
+    text-align: center !important;
+  }
