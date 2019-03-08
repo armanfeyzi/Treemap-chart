@@ -297,11 +297,9 @@ switch (parseInt(val)) {
   return color
 }
 
-
 var tooltip = d3.select("#chart").append("div")
 .attr("class", "tooltip")
 .style("opacity", 0);
-
 
 function redraw() {
   var width = chartDiv.clientWidth;
@@ -382,34 +380,33 @@ function redraw() {
       .attr("text-anchor", "middle")
       // .attr("unicode-bidi","isolate-override")
       .attr("font-size", d => Math.min(d.x1 - d.x0, d.y1 - d.y0) / 6);
-    
 
-// Add a <tspan class="author"> for every data element.
-txt.append("tspan")
-    .text(d => `${d.data.price}`)
-    .attr("class", "price")
-    .attr("dy", "1.4em")
-    .attr("x", function() {
-      const parentData = d3.select(this.parentNode).datum();
-      return (parentData.x1 - parentData.x0) / 2;
-    });
-    
+
 // Add a <tspan class="title"> for every data element.
 txt.append("tspan")
     .text(d => d.data.name)
     .attr("class", "title")
-    .attr("dy", "1.1em")
+    .attr("dy", "1.7em")
     .attr("x", function() {
       const parentData = d3.select(this.parentNode).datum();
       return (parentData.x1 - parentData.x0) / 2;
     });
 
+// Add a <tspan class="author"> for every data element.
+txt.append("tspan")
+    .text(d => `r${d.data.price}`)
+    .attr("class", "price")
+    .attr("dy", "1.6em")
+    .attr("x", function() {
+      const parentData = d3.select(this.parentNode).datum();
+      return (parentData.x1 - parentData.x0) / 2;
+    });
     
 // Add a <tspan class="author"> for every data element.
 txt.append("tspan")
     .text(d => `${d.data.pc}`)
     .attr("class", "percent")
-    .attr("dy", "1.1em")
+    .attr("dy", "1.4em")
     .attr("x", function() {
       const parentData = d3.select(this.parentNode).datum();
       return (parentData.x1 - parentData.x0) / 2;
