@@ -53,17 +53,17 @@ let data = {
         },
         {
           "name": "آرمان",
-          "volume": 10398.3,
+          "volume": 17398.3,
           "value": 12450,
           "price": 13201,
-          "pc": 7.4
+          "pc": 2.4
         },
         {
           "name": "ربث",
           "volume": 10150.5,
           "value": 12450,
           "price": 13201,
-          "pc": 0.89
+          "pc": 3.89
         },
         {
           "name": "کزرب",
@@ -267,9 +267,9 @@ switch (parseInt(val)) {
   case -9:
   case -8:
   case -7:
-  case -6:
     color = colors[0]
     break;
+  case -6:
   case -5:
   case -4:
   case -3:
@@ -287,6 +287,8 @@ switch (parseInt(val)) {
   case 3:
   case 4:
   case 5:
+  case 6:
+  case 7:
     color = colors[4]
     break;
   default:
@@ -294,6 +296,12 @@ switch (parseInt(val)) {
 }
   return color
 }
+
+
+var tooltip = d3.select("#chart").append("div")
+.attr("class", "tooltip")
+.style("opacity", 0);
+
 
 function redraw() {
   var width = chartDiv.clientWidth;
@@ -316,16 +324,38 @@ function redraw() {
       .data(root.leaves())
       .enter()
       .append("g")
-      .attr("transform", d => `translate(${d.x0},${d.y0})`);
+      .attr("transform", d => `translate(${d.x0},${d.y0})`)
+    .on("mousemove", function (d) {
+      // console.log(d)
+      tooltip.transition()
+        .duration(300)
+        .style("opacity", .98);
+      tooltip.html(`<div class="tooltip-body" data-id=${d.data.name} >
+          <ul>
+            <li>سهام شرکت: ${d.data.name}</li>
+            <li>قیمت: ${d.data.price}</li>
+            <li>درصد تغییر: ${d.data.pc}</li>
+            <li># todo line chart</li>
+          </ul>
+          
+      </div>`)
+        .style("left", (d3.event.pageX + 10) + "px")
+        .style("top", (d3.event.pageY + 10) + "px");
+    })
+    .on("mouseout", function (d) {
+      tooltip.transition()
+        .duration(500)
+        .style("opacity", 0);
+    });
 
-    leaf.append("title").text(
-      d =>
-        `${d
-          .ancestors()
-          .reverse()
-          .map(d => d.data.name)
-          .join("/")}\n${format(d.value)}`
-    );
+    // leaf.append("title").text(
+    //   d =>
+    //     `${d
+    //       .ancestors()
+    //       .reverse()
+    //       .map(d => d.data.name)
+    //       .join("/")}\n${format(d.value)}`
+    // );
 
     leaf
       .append("rect")
@@ -346,45 +376,93 @@ function redraw() {
     //     .append("use")
     //     .attr("xlink:href", d => d.leafUid.href);
 
-    leaf
+   let txt = leaf
       .append("text")
       .attr("fill", "#fff")
       .attr("text-anchor", "middle")
-      .attr("unicode-bidi","isolate-override")
-      // .attr("clip-path", d => d.clipUid)
-      // .attr("width", d => d.x1 - d.x0)
-      // .attr("height", d => d.y1 - d.y0)
-      // .attr("y", 0)
-      // .attr("x", 0)
-      // .attr("dy", 0)
-      .attr("font-size", d => Math.min(d.x1 - d.x0, d.y1 - d.y0) / 6)
-      .selectAll("tspan")
-      .data(d =>
-        d.data.name
-          .split(/(?=[A-Z][^A-Z])/g)
-          .concat(format(d.data.volume))
-          .concat("%"+format(d.data.pc))
-      )
-      .enter()
-      .append("tspan")
-      // .style("width", d => d.x1 - d.x0)
-      // .style("height", d => d.y1 - d.y0)
-      // .attr("direction" ,"rtl")
-      // .attr("xml:lang","fa")
-      // .attr("unicode-bidi","bidi-override")
-      // .attr("transform", "(250 250 250 250)")
-      // .style("text-anchor", "start")
-      // .attr("dominant-baseline", "central")
-      .attr("dy", "1.5em")
-      .attr("x", function() {
-        const parentData = d3.select(this.parentNode).datum();
-        return (parentData.x1 - parentData.x0) / 2;
-      })
-      .attr("font-weight", (d, i, nodes) =>
-        i === nodes.length - 1 ? "400" : "700"
-      )
-      .text(d => d);
+      // .attr("unicode-bidi","isolate-override")
+      .attr("font-size", d => Math.min(d.x1 - d.x0, d.y1 - d.y0) / 6);
+    
 
+// Add a <tspan class="author"> for every data element.
+txt.append("tspan")
+    .text(d => `${d.data.price}`)
+    .attr("class", "price")
+    .attr("dy", "1.4em")
+    .attr("x", function() {
+      const parentData = d3.select(this.parentNode).datum();
+      return (parentData.x1 - parentData.x0) / 2;
+    });
+    
+// Add a <tspan class="title"> for every data element.
+txt.append("tspan")
+    .text(d => d.data.name)
+    .attr("class", "title")
+    .attr("dy", "1.1em")
+    .attr("x", function() {
+      const parentData = d3.select(this.parentNode).datum();
+      return (parentData.x1 - parentData.x0) / 2;
+    });
+
+    
+// Add a <tspan class="author"> for every data element.
+txt.append("tspan")
+    .text(d => `${d.data.pc}`)
+    .attr("class", "percent")
+    .attr("dy", "1.1em")
+    .attr("x", function() {
+      const parentData = d3.select(this.parentNode).datum();
+      return (parentData.x1 - parentData.x0) / 2;
+    });
+
+// Add a <tspan class="text"> for every text line.
+txt.selectAll("tspan.text")
+    .data(d => d.text.split("\n"))
+    .enter()
+    .append("tspan")
+    .attr("class", "text")
+    .text(d => d)
+    .attr("dy", "1.1em")
+    .attr("x", function() {
+      const parentData = d3.select(this.parentNode).datum();
+      return (parentData.x1 - parentData.x0) / 2;
+    });  
+  
+//       .selectAll("tspan")
+//       .data(d =>
+//         d.data.name
+//           .split(/(?=[A-Z][^A-Z])/g)
+//           .concat(format(d.data.volume))
+//           .concat("+%"+format(d.data.pc))
+//       )
+//       .enter()
+//       .append("tspan")
+//       // .style("width", d => d.x1 - d.x0)
+//       // .style("height", d => d.y1 - d.y0)
+//       // .attr("direction" ,"rtl")
+//       // .attr("xml:lang","fa")
+//       // .attr("unicode-bidi","bidi-override")
+//       // .attr("transform", "(250 250 250 250)")
+//       // .style("text-anchor", "start")
+//       // .attr("dominant-baseline", "central")
+//       // .attr("y", function() {
+//       //   const parentData = d3.select(this.parentNode).datum();
+//       //   return (parentData.y1 - parentData.y0) / 2;
+//       // })
+//       .attr("dy", "1.4em")
+//       .attr("x", function() {
+//         const parentData = d3.select(this.parentNode).datum();
+//         return (parentData.x1 - parentData.x0) / 2;
+//       })
+//       .attr("font-weight", (d, i, nodes) =>
+//         i === nodes.length - 1 ? "400" : "700"
+//       )
+//       .text(d => d);
+
+    
+    
+    
+    
     // Add title for the top level
     svg
       .selectAll("titles")
