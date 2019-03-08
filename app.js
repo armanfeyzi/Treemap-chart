@@ -412,18 +412,18 @@ txt.append("tspan")
       return (parentData.x1 - parentData.x0) / 2;
     });
 
-// Add a <tspan class="text"> for every text line.
-txt.selectAll("tspan.text")
-    .data(d => d.text.split("\n"))
-    .enter()
-    .append("tspan")
-    .attr("class", "text")
-    .text(d => d)
-    .attr("dy", "1.1em")
-    .attr("x", function() {
-      const parentData = d3.select(this.parentNode).datum();
-      return (parentData.x1 - parentData.x0) / 2;
-    });  
+// // Add a <tspan class="text"> for every text line.
+// txt.selectAll("tspan.text")
+//     .data(d => d.text.split("\n"))
+//     .enter()
+//     .append("tspan")
+//     .attr("class", "text")
+//     .text(d => d)
+//     .attr("dy", "1.1em")
+//     .attr("x", function() {
+//       const parentData = d3.select(this.parentNode).datum();
+//       return (parentData.x1 - parentData.x0) / 2;
+//     });  
   
 //       .selectAll("tspan")
 //       .data(d =>
