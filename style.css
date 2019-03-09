@@ -14,6 +14,9 @@
   font-family: 'Vazir', sans-serif;
 }
 
+g text.shadow{
+  text-shadow: 0.025em 0.04em 0 #555;
+}
 g {
     cursor: grab;
     fill: #fff;
@@ -22,4 +25,30 @@ g {
 
 rect:hover{
   opacity: 0.8;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px;
+  text-align: right;
+  background: rgba(0, 0, 0, .87);
+  color: #fff;
+  border: 0px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+#chart .tooltip hr {
+  padding: 0;
+  margin: 8px 0;
+}
+
+.tooltip .tolltip-body{
+  text-align: right;
+  direction: rtl;
+}
+
+.percent, .price{
+  direction: rtl !important;
+  text-align: right !important;
 }

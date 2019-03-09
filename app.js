@@ -2,7 +2,7 @@ let data = {
   "name": "بورس تهران",
   "children": [
     {
-      "name": "group 1",
+      "name": "بانک ها و موسسات مالی",
       "children": [
         {
           "name": "وبملت",
@@ -42,7 +42,7 @@ let data = {
       ]
     },
     {
-      "name": "Group 2",
+      "name": "صنایع و معادن",
       "children": [
         {
           "name": "خدماتا",
@@ -110,7 +110,7 @@ let data = {
       ]
     },
     {
-      "name": "Group 3",
+      "name": "خودروسازی",
       "children": [
         {
           "name": "صپثص",
@@ -199,7 +199,7 @@ let data = {
       ]
     },
     {
-      "name": "Group 4",
+      "name": "شرکت های IT",
       "children": [
         {
           "name": "شسدپ",
@@ -378,6 +378,13 @@ function redraw() {
       .append("text")
       .attr("fill", "#fff")
       .attr("text-anchor", "middle")
+      .attr("class", "shadow")
+      // .attr("dy", "1.7em")
+      .attr("y", function() {
+        const parentData = d3.select(this.parentNode).datum();
+        return (parentData.y1 - parentData.y0) / 2;
+      })
+      // .attr("x", "1.7em")
       // .attr("unicode-bidi","isolate-override")
       .attr("font-size", d => Math.min(d.x1 - d.x0, d.y1 - d.y0) / 6);
 
@@ -386,7 +393,7 @@ function redraw() {
 txt.append("tspan")
     .text(d => d.data.name)
     .attr("class", "title")
-    .attr("dy", "1.7em")
+    .attr("dy", "-1.5em")
     .attr("x", function() {
       const parentData = d3.select(this.parentNode).datum();
       return (parentData.x1 - parentData.x0) / 2;
@@ -396,7 +403,7 @@ txt.append("tspan")
 txt.append("tspan")
     .text(d => `r${d.data.price}`)
     .attr("class", "price")
-    .attr("dy", "1.6em")
+    .attr("dy", "1.4em")
     .attr("x", function() {
       const parentData = d3.select(this.parentNode).datum();
       return (parentData.x1 - parentData.x0) / 2;
@@ -412,7 +419,7 @@ txt.append("tspan")
       return (parentData.x1 - parentData.x0) / 2;
     });
 
-// // Add a <tspan class="text"> for every text line.
+// Add a <tspan class="text"> for every text line.
 // txt.selectAll("tspan.text")
 //     .data(d => d.text.split("\n"))
 //     .enter()
@@ -469,18 +476,19 @@ txt.append("tspan")
         })
       )
       .enter()
+      .append('g')
+      .attr("x", (d) => d.x0)
+      .attr("y", (d) => d.y0)
+      .attr("dx", (d) => d.x0 + d.x1)
+      .attr("dy", (d) => d.y0 + d.y1)
+      .attr("fill", "#fff")
       .append("text")
-      .attr("x", function(d) {
-        return d.x0 + 3;
-      })
-      .attr("y", function(d) {
-        return d.y0 + 17;
-      })
-      .text(function(d) {
-        return d.data.name;
-      })
+      .attr("x", (d) => d.x0 + 3)
+      .attr("y", (d) => d.y0 + 18)
+      .text((d) => d.data.name)
       .attr("font-size", "16px")
-      .attr("font-weight", "600")
+      .attr("font-weight", "400")
+      .attr("text-shadow", "0 0 0 #111")
       .attr("fill", "#fff");
 
     return svg.node();
