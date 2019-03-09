@@ -1,8 +1,8 @@
-export default{
+let data = {
   "name": "بورس تهران",
   "children": [
     {
-      "name": "group 1",
+      "name": "بانک ها و موسسات مالی",
       "children": [
         {
           "name": "وبملت",
@@ -12,28 +12,28 @@ export default{
           "pc": -8
         },
         {
-          "name": "سپه",
+          "name": "وسپه",
           "volume": 7809.1,
           "value": 12450,
           "price": 13201,
           "pc": -4
         },
         {
-          "name": "سمپا",
+          "name": "وسینا",
           "volume": 2163.7,
           "value": 12450,
           "price": 13201,
           "pc": 3
         },
         {
-          "name": "قمرو",
+          "name": "ونوین",
           "volume": 1756.5,
           "value": 12450,
           "price": 13201,
           "pc": 4
         },
         {
-          "name": "آپ",
+          "name": "وکار",
           "volume": 1201.7,
           "value": 12450,
           "price": 13201,
@@ -42,7 +42,7 @@ export default{
       ]
     },
     {
-      "name": "Group 2",
+      "name": "صنایع و معادن",
       "children": [
         {
           "name": "خدماتا",
@@ -53,17 +53,17 @@ export default{
         },
         {
           "name": "آرمان",
-          "volume": 10398.3,
+          "volume": 17398.3,
           "value": 12450,
           "price": 13201,
-          "pc": 7.4
+          "pc": 2.4
         },
         {
           "name": "ربث",
           "volume": 10150.5,
           "value": 12450,
           "price": 13201,
-          "pc": 0.89
+          "pc": 3.89
         },
         {
           "name": "کزرب",
@@ -110,87 +110,87 @@ export default{
       ]
     },
     {
-      "name": "Group 3",
+      "name": "خودروسازی",
       "children": [
         {
-          "name": "صپثص",
+          "name": "ورنا",
           "volume": 1335,
           "value": 12450,
           "price": 13201,
           "pc": 0.11
         },
         {
-          "name": "بدقث",
+          "name": "خمحرکه",
           "volume": 1148,
           "value": 12450,
           "price": 13201,
           "pc": 9.9
         },
         {
-          "name": "سایپا",
+          "name": "پارس",
           "volume": 126,
           "value": 12450,
           "price": 13201,
           "pc": 8.3
         },
         {
-          "name": "دیزل",
+          "name": "جم",
           "volume": 1216,
           "value": 12450,
           "price": 13201,
           "pc": 7.2
         },
         {
-          "name": "اینده",
+          "name": "خودرو",
           "volume": 1035,
           "value": 12450,
           "price": 13201,
           "pc": 6
         },
         {
-          "name": "سمینت",
+          "name": "خرینگ",
           "volume": 1333,
           "value": 12450,
           "price": 13201,
           "pc": 4.01
         },
         {
-          "name": "صپث",
+          "name": "خمحور",
           "volume": 903,
           "value": 12450,
           "price": 13201,
           "pc": -4.34
         },
         {
-          "name": "نلج",
+          "name": "ختور",
           "volume": 919,
           "value": 12450,
           "price": 13201,
           "pc": 1
         },
         {
-          "name": "صمیخ",
+          "name": "خاذین",
           "volume": 778,
           "value": 12450,
           "price": 13201,
           "pc": -1
         },
         {
-          "name": "دقثه",
+          "name": "پترل",
           "volume": 812,
           "value": 12450,
           "price": 13201,
           "pc": 2.1
         },
         {
-          "name": "ودیست",
+          "name": "خودرو",
           "volume": 593,
           "value": 12450,
           "price": 13201,
           "pc": -2
         },
         {
-          "name": "پدسع",
+          "name": "خزامیا",
           "volume": 1422,
           "value": 12450,
           "price": 13201,
@@ -199,7 +199,7 @@ export default{
       ]
     },
     {
-      "name": "Group 4",
+      "name": "شرکت های IT",
       "children": [
         {
           "name": "شسدپ",
@@ -246,4 +246,4 @@ export default{
       ]
     }
   ]
-}
+};

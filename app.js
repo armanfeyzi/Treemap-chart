@@ -1,107 +1,111 @@
 let data = {
   "name": "بورس تهران",
-  "children": [
-    {
+  "children": [{
       "name": "بانک ها و موسسات مالی",
-      "children": [
-        {
+      "children": [{
           "name": "وبملت",
-          "volume": 2567.2,
+          "volume": 10567.2,
           "value": 12450,
-          "price": 13201,
+          "price": 33201,
           "pc": -8
         },
         {
-          "name": "سپه",
-          "volume": 7809.1,
+          "name": "وسپه",
+          "volume": 6009.1,
           "value": 12450,
-          "price": 13201,
+          "price": 11201,
           "pc": -4
         },
         {
-          "name": "سمپا",
-          "volume": 2163.7,
+          "name": "وسینا",
+          "volume": 4163.7,
           "value": 12450,
-          "price": 13201,
+          "price": 1901,
           "pc": 3
         },
         {
-          "name": "قمرو",
-          "volume": 1756.5,
+          "name": "ونوین",
+          "volume": 4756.5,
           "value": 12450,
-          "price": 13201,
+          "price": 1001,
           "pc": 4
         },
         {
-          "name": "آپ",
-          "volume": 1201.7,
+          "name": "وتجارت",
+          "volume": 7201.7,
           "value": 12450,
-          "price": 13201,
+          "price": 10201,
+          "pc": 5.2
+        },
+        {
+          "name": "وپارس",
+          "volume": 5201.7,
+          "value": 12450,
+          "price": 19201,
           "pc": 5.2
         }
       ]
     },
     {
-      "name": "صنایع و معادن",
-      "children": [
-        {
-          "name": "خدماتا",
+      "name": "فلزات اساسی",
+      "children": [{
+          "name": "فولاد",
           "volume": 2999.3,
           "value": 12450,
           "price": 13201,
           "pc": 6.3
         },
         {
-          "name": "آرمان",
-          "volume": 17398.3,
+          "name": "فخاس",
+          "volume": 6398.3,
           "value": 12450,
           "price": 13201,
           "pc": 2.4
         },
         {
-          "name": "ربث",
-          "volume": 10150.5,
+          "name": "فجر",
+          "volume": 8150.5,
           "value": 12450,
           "price": 13201,
           "pc": 3.89
         },
         {
-          "name": "کزرب",
+          "name": "کاوه",
           "volume": 2652.6,
           "value": 12450,
           "price": 13201,
           "pc": 1.3
         },
         {
-          "name": "حسیب",
+          "name": "فلوله",
           "volume": 2894,
           "value": 12450,
           "price": 13201,
           "pc": -4.04
         },
         {
-          "name": "نیب",
+          "name": "فسپا",
           "volume": 6281.2,
           "value": 12450,
           "price": 13201,
           "pc": -3
         },
         {
-          "name": "دثمق",
+          "name": "فملی",
           "volume": 2431.3,
           "value": 12450,
           "price": 13201,
           "pc": -3.4
         },
         {
-          "name": "ثسمنی",
+          "name": "فایرا",
           "volume": 2373.5,
           "value": 12450,
           "price": 13201,
           "pc": -2
         },
         {
-          "name": "آبرح",
+          "name": "فروس",
           "volume": 1377.1,
           "value": 12450,
           "price": 13201,
@@ -111,86 +115,85 @@ let data = {
     },
     {
       "name": "خودروسازی",
-      "children": [
-        {
-          "name": "صپثص",
+      "children": [{
+          "name": "ورنا",
           "volume": 1335,
           "value": 12450,
           "price": 13201,
           "pc": 0.11
         },
         {
-          "name": "بدقث",
+          "name": "خمحرکه",
           "volume": 1148,
           "value": 12450,
           "price": 13201,
           "pc": 9.9
         },
         {
-          "name": "سایپا",
+          "name": "پارس",
           "volume": 126,
           "value": 12450,
           "price": 13201,
           "pc": 8.3
         },
         {
-          "name": "دیزل",
+          "name": "جم",
           "volume": 1216,
           "value": 12450,
           "price": 13201,
           "pc": 7.2
         },
         {
-          "name": "اینده",
-          "volume": 1035,
+          "name": "خکمک",
+          "volume": 1535,
           "value": 12450,
           "price": 13201,
           "pc": 6
         },
         {
-          "name": "سمینت",
+          "name": "خرینگ",
           "volume": 1333,
           "value": 12450,
           "price": 13201,
           "pc": 4.01
         },
         {
-          "name": "صپث",
-          "volume": 903,
+          "name": "خمحور",
+          "volume": 2903,
           "value": 12450,
           "price": 13201,
           "pc": -4.34
         },
         {
-          "name": "نلج",
-          "volume": 919,
+          "name": "ختور",
+          "volume": 3919,
           "value": 12450,
           "price": 13201,
           "pc": 1
         },
         {
-          "name": "صمیخ",
-          "volume": 778,
+          "name": "خاذین",
+          "volume": 1778,
           "value": 12450,
           "price": 13201,
           "pc": -1
         },
         {
-          "name": "دقثه",
-          "volume": 812,
+          "name": "پترل",
+          "volume": 2812,
           "value": 12450,
           "price": 13201,
           "pc": 2.1
         },
         {
-          "name": "ودیست",
+          "name": "خودرو",
           "volume": 593,
           "value": 12450,
           "price": 13201,
           "pc": -2
         },
         {
-          "name": "پدسع",
+          "name": "خزامیا",
           "volume": 1422,
           "value": 12450,
           "price": 13201,
@@ -200,44 +203,43 @@ let data = {
     },
     {
       "name": "شرکت های IT",
-      "children": [
-        {
-          "name": "شسدپ",
+      "children": [{
+          "name": "رانفور",
           "volume": 538.9,
           "value": 12450,
           "price": 13201,
           "pc": 3.5
         },
         {
-          "name": "پثق",
+          "name": "سیستم",
           "volume": 455.8,
           "value": 12450,
           "price": 13201,
           "pc": 4
         },
         {
-          "name": "صمنی",
+          "name": "آپ",
           "volume": 2864,
           "value": 12450,
           "price": 13201,
           "pc": 1
         },
         {
-          "name": "منسی",
+          "name": "پرداخت",
           "volume": 5181.6,
           "value": 12450,
           "price": 13201,
           "pc": 4
         },
         {
-          "name": "ققب",
+          "name": "مرقام",
           "volume": 692,
           "value": 12450,
           "price": 13201,
           "pc": 6
         },
         {
-          "name": "عدبس",
+          "name": "رکیش",
           "volume": 133.1,
           "value": 12450,
           "price": 13201,
@@ -251,6 +253,8 @@ let data = {
 let chartDiv = document.getElementById("chart");
 let svg = d3.select(chartDiv).append("svg");
 
+let format = d3.format(",d");
+
 let colors = [
   "#AA2121",
   "#C84040",
@@ -261,45 +265,45 @@ let colors = [
 ];
 
 function getColor(val) {
-let color = "red"
-switch (parseInt(val)) {
-  case -10:
-  case -9:
-  case -8:
-  case -7:
-    color = colors[0]
-    break;
-  case -6:
-  case -5:
-  case -4:
-  case -3:
-    color = colors[1]
-    break;
-  case -2:
-  case -1:
-    color = colors[2]
-    break;
-  case 0:
-  case 1:
-  case 2:
-    color = colors[3]
-    break;
-  case 3:
-  case 4:
-  case 5:
-  case 6:
-  case 7:
-    color = colors[4]
-    break;
-  default:
-    color = colors[5]
-}
+  let color = "red"
+  switch (parseInt(val)) {
+    case -10:
+    case -9:
+    case -8:
+    case -7:
+      color = colors[0]
+      break;
+    case -6:
+    case -5:
+    case -4:
+    case -3:
+      color = colors[1]
+      break;
+    case -2:
+    case -1:
+      color = colors[2]
+      break;
+    case 0:
+    case 1:
+    case 2:
+      color = colors[3]
+      break;
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+      color = colors[4]
+      break;
+    default:
+      color = colors[5]
+  }
   return color
 }
 
 var tooltip = d3.select("#chart").append("div")
-.attr("class", "tooltip")
-.style("opacity", 0);
+  .attr("class", "tooltip")
+  .style("opacity", 0);
 
 function redraw() {
   var width = chartDiv.clientWidth;
@@ -323,12 +327,12 @@ function redraw() {
       .enter()
       .append("g")
       .attr("transform", d => `translate(${d.x0},${d.y0})`)
-    .on("mousemove", function (d) {
-      // console.log(d)
-      tooltip.transition()
-        .duration(300)
-        .style("opacity", .98);
-      tooltip.html(`<div class="tooltip-body" data-id=${d.data.name} >
+      .on("mousemove", function (d) {
+        // console.log(d)
+        tooltip.transition()
+          .duration(300)
+          .style("opacity", .98);
+        tooltip.html(`<div class="tooltip-body" data-id=${d.data.name} >
           <ul>
             <li>سهام شرکت: ${d.data.name}</li>
             <li>قیمت: ${d.data.price}</li>
@@ -337,14 +341,14 @@ function redraw() {
           </ul>
           
       </div>`)
-        .style("left", (d3.event.pageX + 10) + "px")
-        .style("top", (d3.event.pageY + 10) + "px");
-    })
-    .on("mouseout", function (d) {
-      tooltip.transition()
-        .duration(500)
-        .style("opacity", 0);
-    });
+          .style("left", (d3.event.pageX + 10) + "px")
+          .style("top", (d3.event.pageY + 10) + "px");
+      })
+      .on("mouseout", function (d) {
+        tooltip.transition()
+          .duration(500)
+          .style("opacity", 0);
+      });
 
     // leaf.append("title").text(
     //   d =>
@@ -374,13 +378,13 @@ function redraw() {
     //     .append("use")
     //     .attr("xlink:href", d => d.leafUid.href);
 
-   let txt = leaf
+    let txt = leaf
       .append("text")
       .attr("fill", "#fff")
       .attr("text-anchor", "middle")
       .attr("class", "shadow")
       // .attr("dy", "1.7em")
-      .attr("y", function() {
+      .attr("y", function () {
         const parentData = d3.select(this.parentNode).datum();
         return (parentData.y1 - parentData.y0) / 2;
       })
@@ -389,89 +393,89 @@ function redraw() {
       .attr("font-size", d => Math.min(d.x1 - d.x0, d.y1 - d.y0) / 6);
 
 
-// Add a <tspan class="title"> for every data element.
-txt.append("tspan")
-    .text(d => d.data.name)
-    .attr("class", "title")
-    .attr("dy", "-1.5em")
-    .attr("x", function() {
-      const parentData = d3.select(this.parentNode).datum();
-      return (parentData.x1 - parentData.x0) / 2;
-    });
+    // Add a <tspan class="title"> for every data element.
+    txt.append("tspan")
+      .text(d => d.data.name)
+      .attr("class", "title")
+      .attr("dy", "-1.5em")
+      .attr("x", function () {
+        const parentData = d3.select(this.parentNode).datum();
+        return (parentData.x1 - parentData.x0) / 2;
+      });
 
-// Add a <tspan class="author"> for every data element.
-txt.append("tspan")
-    .text(d => `r${d.data.price}`)
-    .attr("class", "price")
-    .attr("dy", "1.4em")
-    .attr("x", function() {
-      const parentData = d3.select(this.parentNode).datum();
-      return (parentData.x1 - parentData.x0) / 2;
-    });
-    
-// Add a <tspan class="author"> for every data element.
-txt.append("tspan")
-    .text(d => `${d.data.pc}`)
-    .attr("class", "percent")
-    .attr("dy", "1.4em")
-    .attr("x", function() {
-      const parentData = d3.select(this.parentNode).datum();
-      return (parentData.x1 - parentData.x0) / 2;
-    });
+    // Add a <tspan class="author"> for every data element.
+    txt.append("tspan")
+      .text(d => `T${format(d.data.price / 10)}`)
+      .attr("class", "price")
+      .attr("dy", "1.4em")
+      .attr("x", function () {
+        const parentData = d3.select(this.parentNode).datum();
+        return (parentData.x1 - parentData.x0) / 2;
+      });
 
-// Add a <tspan class="text"> for every text line.
-// txt.selectAll("tspan.text")
-//     .data(d => d.text.split("\n"))
-//     .enter()
-//     .append("tspan")
-//     .attr("class", "text")
-//     .text(d => d)
-//     .attr("dy", "1.1em")
-//     .attr("x", function() {
-//       const parentData = d3.select(this.parentNode).datum();
-//       return (parentData.x1 - parentData.x0) / 2;
-//     });  
-  
-//       .selectAll("tspan")
-//       .data(d =>
-//         d.data.name
-//           .split(/(?=[A-Z][^A-Z])/g)
-//           .concat(format(d.data.volume))
-//           .concat("+%"+format(d.data.pc))
-//       )
-//       .enter()
-//       .append("tspan")
-//       // .style("width", d => d.x1 - d.x0)
-//       // .style("height", d => d.y1 - d.y0)
-//       // .attr("direction" ,"rtl")
-//       // .attr("xml:lang","fa")
-//       // .attr("unicode-bidi","bidi-override")
-//       // .attr("transform", "(250 250 250 250)")
-//       // .style("text-anchor", "start")
-//       // .attr("dominant-baseline", "central")
-//       // .attr("y", function() {
-//       //   const parentData = d3.select(this.parentNode).datum();
-//       //   return (parentData.y1 - parentData.y0) / 2;
-//       // })
-//       .attr("dy", "1.4em")
-//       .attr("x", function() {
-//         const parentData = d3.select(this.parentNode).datum();
-//         return (parentData.x1 - parentData.x0) / 2;
-//       })
-//       .attr("font-weight", (d, i, nodes) =>
-//         i === nodes.length - 1 ? "400" : "700"
-//       )
-//       .text(d => d);
+    // Add a <tspan class="author"> for every data element.
+    txt.append("tspan")
+      .text(d => (d.data.pc > 0) ? `+${d.data.pc}` : `${d.data.pc}`)
+      .attr("class", "percent")
+      .attr("dy", "1.4em")
+      .attr("x", function () {
+        const parentData = d3.select(this.parentNode).datum();
+        return (parentData.x1 - parentData.x0) / 2;
+      });
 
-    
-    
-    
-    
+    // Add a <tspan class="text"> for every text line.
+    // txt.selectAll("tspan.text")
+    //     .data(d => d.text.split("\n"))
+    //     .enter()
+    //     .append("tspan")
+    //     .attr("class", "text")
+    //     .text(d => d)
+    //     .attr("dy", "1.1em")
+    //     .attr("x", function() {
+    //       const parentData = d3.select(this.parentNode).datum();
+    //       return (parentData.x1 - parentData.x0) / 2;
+    //     });  
+
+    //       .selectAll("tspan")
+    //       .data(d =>
+    //         d.data.name
+    //           .split(/(?=[A-Z][^A-Z])/g)
+    //           .concat(format(d.data.volume))
+    //           .concat("+%"+format(d.data.pc))
+    //       )
+    //       .enter()
+    //       .append("tspan")
+    //       // .style("width", d => d.x1 - d.x0)
+    //       // .style("height", d => d.y1 - d.y0)
+    //       // .attr("direction" ,"rtl")
+    //       // .attr("xml:lang","fa")
+    //       // .attr("unicode-bidi","bidi-override")
+    //       // .attr("transform", "(250 250 250 250)")
+    //       // .style("text-anchor", "start")
+    //       // .attr("dominant-baseline", "central")
+    //       // .attr("y", function() {
+    //       //   const parentData = d3.select(this.parentNode).datum();
+    //       //   return (parentData.y1 - parentData.y0) / 2;
+    //       // })
+    //       .attr("dy", "1.4em")
+    //       .attr("x", function() {
+    //         const parentData = d3.select(this.parentNode).datum();
+    //         return (parentData.x1 - parentData.x0) / 2;
+    //       })
+    //       .attr("font-weight", (d, i, nodes) =>
+    //         i === nodes.length - 1 ? "400" : "700"
+    //       )
+    //       .text(d => d);
+
+
+
+
+
     // Add title for the top level
     svg
       .selectAll("titles")
       .data(
-        root.descendants().filter(function(d) {
+        root.descendants().filter(function (d) {
           return d.depth == 1;
         })
       )
@@ -481,14 +485,13 @@ txt.append("tspan")
       .attr("y", (d) => d.y0)
       .attr("dx", (d) => d.x0 + d.x1)
       .attr("dy", (d) => d.y0 + d.y1)
-      .attr("fill", "#fff")
       .append("text")
       .attr("x", (d) => d.x0 + 3)
       .attr("y", (d) => d.y0 + 18)
       .text((d) => d.data.name)
+      // .attr("font-size", d => Math.max(d.x1 - d.x0, d.y1 - d.y0) / 22)
       .attr("font-size", "16px")
       .attr("font-weight", "400")
-      .attr("text-shadow", "0 0 0 #111")
       .attr("fill", "#fff");
 
     return svg.node();
@@ -499,7 +502,7 @@ txt.append("tspan")
     .sum(d => d.volume)
     .sort((a, b) => b.height - a.height || b.value - a.value);
 
-  let reg = d3.selectAll("input[name='dtype']").on("change", function() {
+  let reg = d3.selectAll("input[name='dtype']").on("change", function () {
     let dtype = this.value;
   });
 
@@ -531,24 +534,24 @@ var instance = panzoom(document.getElementById("chart"), {
   minZoom: 1
 });
 
-instance.on("panstart", function(e) {
+instance.on("panstart", function (e) {
   console.log("Fired when pan is just started ", e);
   // Note: e === instance.
 });
 
-instance.on("pan", function(e) {
+instance.on("pan", function (e) {
   console.log("Fired when the scene is being panned", e);
 });
 
-instance.on("panend", function(e) {
+instance.on("panend", function (e) {
   console.log("Fired when pan ended", e);
 });
 
-instance.on("zoom", function(e) {
+instance.on("zoom", function (e) {
   console.log("Fired when scene is zoomed", e);
 });
 
-instance.on("transform", function(e) {
+instance.on("transform", function (e) {
   // This event will be called along with events above.
   console.log("Fired when any transformation has happened", e);
 });
