@@ -1,248 +1,248 @@
 let data = {
-  "name": "بورس تهران",
+  "name": "NASDAQ",
   "children": [{
-      "name": "بانک ها و موسسات مالی",
+      "name": "NASDAQ",
       "children": [{
-          "name": "وبملت",
+          "name": "APPL",
           "volume": 10567.2,
           "value": 12450,
-          "price": 33201,
+          "price": 3301,
           "pc": -8
         },
         {
-          "name": "وسپه",
+          "name": "MSFT",
           "volume": 6009.1,
           "value": 12450,
-          "price": 11201,
+          "price": 1121,
           "pc": -4
         },
         {
-          "name": "وسینا",
+          "name": "GOOG",
           "volume": 4163.7,
           "value": 12450,
-          "price": 1901,
+          "price": 191,
           "pc": 3
         },
         {
-          "name": "ونوین",
+          "name": "AMD",
           "volume": 4756.5,
           "value": 12450,
-          "price": 1001,
+          "price": 101,
           "pc": 4
         },
         {
-          "name": "وتجارت",
+          "name": "AMZN",
           "volume": 7201.7,
           "value": 12450,
-          "price": 10201,
+          "price": 1001,
           "pc": 5.2
         },
         {
-          "name": "وپارس",
+          "name": "CSCO",
           "volume": 5201.7,
           "value": 12450,
-          "price": 19201,
+          "price": 1901,
           "pc": 5.2
         }
       ]
     },
     {
-      "name": "فلزات اساسی",
+      "name": "IT",
       "children": [{
-          "name": "فولاد",
+          "name": "NFLX",
           "volume": 2999.3,
           "value": 12450,
-          "price": 13201,
+          "price": 1201,
           "pc": 6.3
         },
         {
-          "name": "فخاس",
+          "name": "AVGO",
           "volume": 6398.3,
           "value": 12450,
-          "price": 13201,
+          "price": 3201,
           "pc": 2.4
         },
         {
-          "name": "فجر",
+          "name": "AAL",
           "volume": 8150.5,
           "value": 12450,
-          "price": 13201,
+          "price": 1201,
           "pc": 3.89
         },
         {
-          "name": "کاوه",
+          "name": "AMGN",
           "volume": 2652.6,
           "value": 12450,
-          "price": 13201,
+          "price": 131,
           "pc": 1.3
         },
         {
-          "name": "فلوله",
+          "name": "TSLA",
           "volume": 2894,
           "value": 12450,
-          "price": 13201,
+          "price": 2201,
           "pc": -4.04
         },
         {
-          "name": "فسپا",
+          "name": "ADBE",
           "volume": 6281.2,
           "value": 12450,
-          "price": 13201,
+          "price": 324,
           "pc": -3
         },
         {
-          "name": "فملی",
+          "name": "ORLY",
           "volume": 2431.3,
           "value": 12450,
-          "price": 13201,
+          "price": 823,
           "pc": -3.4
         },
         {
-          "name": "فایرا",
+          "name": "MCHP",
           "volume": 2373.5,
           "value": 12450,
-          "price": 13201,
+          "price": 3823,
           "pc": -2
         },
         {
-          "name": "فروس",
+          "name": "BIDU",
           "volume": 1377.1,
           "value": 12450,
-          "price": 13201,
+          "price": 112,
           "pc": 1
         }
       ]
     },
     {
-      "name": "خودروسازی",
+      "name": "Telecommunication",
       "children": [{
-          "name": "ورنا",
+          "name": "XEL",
           "volume": 1335,
           "value": 12450,
-          "price": 13201,
+          "price": 998,
           "pc": 0.11
         },
         {
-          "name": "خمحرکه",
+          "name": "EXPE",
           "volume": 1148,
           "value": 12450,
-          "price": 13201,
+          "price": 200,
           "pc": 9.9
         },
         {
-          "name": "پارس",
+          "name": "IBM",
           "volume": 126,
           "value": 12450,
-          "price": 13201,
+          "price": 843,
           "pc": 8.3
         },
         {
-          "name": "جم",
+          "name": "PNSC",
           "volume": 1216,
           "value": 12450,
-          "price": 13201,
+          "price": 773,
           "pc": 7.2
         },
         {
-          "name": "خکمک",
+          "name": "GILD",
           "volume": 1535,
           "value": 12450,
-          "price": 13201,
+          "price": 445,
           "pc": 6
         },
         {
-          "name": "خرینگ",
+          "name": "ADSK",
           "volume": 1333,
           "value": 12450,
-          "price": 13201,
+          "price": 774,
           "pc": 4.01
         },
         {
-          "name": "خمحور",
+          "name": "ROO",
           "volume": 2903,
           "value": 12450,
-          "price": 13201,
+          "price": 998,
           "pc": -4.34
         },
         {
-          "name": "ختور",
+          "name": "FISV",
           "volume": 3919,
           "value": 12450,
-          "price": 13201,
+          "price": 224,
           "pc": 1
         },
         {
-          "name": "خاذین",
+          "name": "BBC",
           "volume": 1778,
           "value": 12450,
-          "price": 13201,
+          "price": 564,
           "pc": -1
         },
         {
-          "name": "پترل",
+          "name": "CNN",
           "volume": 2812,
           "value": 12450,
-          "price": 13201,
+          "price": 564,
           "pc": 2.1
         },
         {
-          "name": "خودرو",
+          "name": "TRX",
           "volume": 593,
           "value": 12450,
-          "price": 13201,
+          "price": 897,
           "pc": -2
         },
         {
-          "name": "خزامیا",
+          "name": "MGNT",
           "volume": 1422,
           "value": 12450,
-          "price": 13201,
+          "price": 321,
           "pc": -9.1
         }
       ]
     },
     {
-      "name": "شرکت های IT",
+      "name": "Crypto",
       "children": [{
-          "name": "رانفور",
+          "name": "BTC",
           "volume": 538.9,
           "value": 12450,
-          "price": 13201,
+          "price": 2323,
           "pc": 3.5
         },
         {
-          "name": "سیستم",
+          "name": "XRP",
           "volume": 455.8,
           "value": 12450,
-          "price": 13201,
+          "price": 2423,
           "pc": 4
         },
         {
-          "name": "آپ",
+          "name": "ETH",
           "volume": 2864,
           "value": 12450,
-          "price": 13201,
+          "price": 437,
           "pc": 1
         },
         {
-          "name": "پرداخت",
+          "name": "BCC",
           "volume": 5181.6,
           "value": 12450,
-          "price": 13201,
+          "price": 238,
           "pc": 4
         },
         {
-          "name": "مرقام",
+          "name": "ZRX",
           "volume": 692,
           "value": 12450,
-          "price": 13201,
+          "price": 301,
           "pc": 6
         },
         {
-          "name": "رکیش",
+          "name": "ZCL",
           "volume": 133.1,
           "value": 12450,
-          "price": 13201,
+          "price": 101,
           "pc": 9
         }
       ]
@@ -334,9 +334,9 @@ function redraw() {
           .style("opacity", .98);
         tooltip.html(`<div class="tooltip-body" data-id=${d.data.name} >
           <ul>
-            <li>سهام شرکت: ${d.data.name}</li>
-            <li>قیمت: ${d.data.price}</li>
-            <li>درصد تغییر: ${d.data.pc}</li>
+            <li>Share: ${d.data.name}</li>
+            <li>price: ${d.data.price}</li>
+            <li>Change: ${d.data.pc}</li>
             <li># todo line chart</li>
           </ul>
           
@@ -405,7 +405,7 @@ function redraw() {
 
     // Add a <tspan class="author"> for every data element.
     txt.append("tspan")
-      .text(d => `T${format(d.data.price / 10)}`)
+      .text(d => `$${format(d.data.price / 10)}`)
       .attr("class", "price")
       .attr("dy", "1.4em")
       .attr("x", function () {
